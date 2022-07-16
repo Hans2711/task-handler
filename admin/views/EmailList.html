@@ -1,0 +1,46 @@
+<div class="tasklist">
+
+    <h1>Email List</h1>
+
+    <form enctype="multipart/form-data" action="#" method="POST">
+
+        <label for="importFile">
+            <p>
+                Email List Upload
+            </p>
+        </label>
+        <input type="file" name="importFile" id="importFile" />
+        <br>
+         <div style="margin-top: 0.5rem;"></div>
+        <input type="submit" name="import-submit" value="Hochladen" />
+    </form>
+
+    <div style="margin-top: 2rem;"></div>
+
+    <table class="tasklist-table">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Phone
+            </th>
+        </tr>
+        {% for element in emailList %}
+            <tr>
+                <td class="tasklist-item">
+                    {{element.name}}
+                </td>
+                <td class="tasklist-item">
+                    {{element.email}}
+                </td>
+                <td class="tasklist-item">
+                    {{element.phone}}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>

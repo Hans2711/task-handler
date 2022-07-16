@@ -1,0 +1,19 @@
+.tasklist-item {
+    margin-left: 20px;
+}
+
+.tasklist-table {
+    border-spacing: 2rem;
+}
+
+.tasklist * p {
+    font-size: 1.4rem;
+}
+
+.tasklist * td {
+    font-size: 1.5rem;
+}
+
+.tasklist * th {
+    font-size: 1.6rem;
+}
